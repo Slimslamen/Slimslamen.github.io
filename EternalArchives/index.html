@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eternal Archives</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+		/>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<header id="hero-section">
+			<nav
+				id="books-navbar"
+				class="navbar navbar-expand justify-content-around"
+			>
+				<ul id="books-search" class="nav navbar-nav">
+					<form id="search-navbar" action="books.html" method="get">
+						<input
+							type="text"
+							id="fetchInput"
+							class="form-control"
+							placeholder="Search"
+							aria-label="Search"
+							aria-describedby="search-addon"
+						/><span id="search-btn" onclick="searchBooks()">
+							<i class="bi bi-search"></i>
+						</span>
+					</form>
+				</ul>
+				<ul id="main-navbar" class="nav navbar-nav justify-content-center">
+					<li class="nav-item">
+						<a
+							id="first-list-item"
+							class="nav-link active text-white"
+							href="./books.html"
+							aria-current="page"
+							target="_blank"
+							>Books <span class="visually-hidden">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#">About us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#"
+							><i class="bi bi-heart"></i
+							><span class="badge text-bg-transparent" id="counter">1</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+			<section class="cta">
+				<h1>Eternal Archives</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+					velit sequi debitis, aliquid placeat corrupti.
+				</p>
+				<button id="sub-btn">Subscribe</button>
+			</section>
+		</header>
+
+		<main class="my-5">
+			<div class="d-flex justify-content-center align-items-center flex-column">
+				<h2 class="text-center my-5">Recommended books</h2>
+				<hr id="recommended">
+			</div>
+
+			<div
+				class="container d-flex justify-content-center align-items-center flex-column"
+			>
+				<img id="containerPic" src="images/HPb.webp" alt="HP" />
+				<div class="content showContent">
+					<h1 class="name text-success">Harry Potter</h1>
+					<p class="contentText text-white">
+						In the new edition of J.K. Rowling's magical successful series about the wizard Harry Potter, the story comes to life again through Jim Kay's fantastic illustrations.
+					</p>
+				</div>
+				<div class="content hide">
+					<h1 class="name text-warning">The Lord Of The Rings</h1>
+					<p class="contentText text-white">
+						'The Fellowship of the Ring,' the first book in J.R.R. Tolkien's 'The Lord of the Rings' trilogy, follows Frodo Baggins and his diverse group of companions.
+					</p>
+				</div>
+				<div class="content hide">
+					<h1 class="name text-primary">Game Of Thrones</h1>
+					<p class="contentText text-white">
+						'A Game of Thrones' by George R.R. Martin is the first book in the 'A Song of Ice and Fire' series. Set in the fictional realms of Westeros and Essos, it follows the Stark family's involvement in the struggle for the Iron Throne.
+					</p>
+				</div>
+				<div class="content hide">
+					<h1 class="name text-danger">Dune</h1>
+					<p class="contentText text-white">
+						Dune, the first novel in Frank Herbert's science fiction series, unfolds on the desert planet Arrakis, the only source of a valuable spice. The story follows Paul Atreides.
+					</p>
+				</div>
+
+				<div class="slide">
+					<div
+						id="item1"
+						class="item show"
+						style="background-image: url(images/Harry-potter.jpg)"
+					></div>
+					<div
+						id="item2"
+						class="item"
+						style="background-image: url(images/LOTR.webp)"
+					></div>
+					<div
+						id="item3"
+						class="item"
+						style="background-image: url(images/GOT.jpg)"
+					></div>
+					<div
+						id="item4"
+						class="item"
+						style="background-image: url(images/Dune.jpg)"
+					></div>
+				</div>
+				<div class="buttons">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="56"
+						height="56"
+						fill="currentColor"
+						class="prev bi bi-arrow-left-short"
+						viewBox="0 0 16 16"
+						onclick="prevPic()"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"
+						/>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="56"
+						height="56"
+						fill="currentColor"
+						class="next bi bi-arrow-right-short"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+						/>
+					</svg>
+				</div>
+			</div>
+		</main>
+		<footer class="d-flex align-items-center justify-content-center">
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

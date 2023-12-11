@@ -1,0 +1,75 @@
+{
+    "books":[
+    {
+        "book": "Harry Potter",
+        "genre": "Fantasy",
+        "Year": "1997",
+        "image": "images/Harry-potter.jpg",
+        "desc": "In the new edition of J.K. Rowling's magical successful series about the wizard Harry Potter, the story comes to life again through Jim Kay's fantastic illustrations. Harry Potter and the Philosopher's Stone is the first book of seven, and the series has captivated readers for more than fifteen years - perfect for reading aloud together."
+    },
+    {
+        "book": "The Lord Of the Rings",
+        "genre": "Fantasy",
+        "Year": "1954",
+        "image": "images/LOTR.webp",
+        "desc": " 'The Fellowship of the Ring,' the first book in J.R.R. Tolkien's 'The Lord of the Rings' trilogy, follows Frodo Baggins and his diverse group of companions as they embark on a perilous journey to destroy the One Ring and thwart the dark lord Sauron. The story explores themes of friendship and the battle between good and evil in the richly detailed world of Middle-earth."
+    },
+    {
+        "book": "Game Of Thrones",
+        "genre": "Fantasy",
+        "Year": "1996",
+        "image": "images/GOT.jpg",
+        "desc": "'A Game of Thrones' by George R.R. Martin is the first book in the 'A Song of Ice and Fire' series. Set in the fictional realms of Westeros and Essos, it follows the Stark family's involvement in the struggle for the Iron Throne. Known for its intricate plot and complex characters, the novel introduces themes of power and honor, laying the groundwork for the epic fantasy series."
+    },
+    {
+        "book": "Dune",
+        "genre": "Fantasy",
+        "Year": "1942",
+        "image": "images/Dune.jpg",
+        "desc":"Dune, the first novel in Frank Herbert's science fiction series, unfolds on the desert planet Arrakis, the only source of a valuable spice. The story follows Paul Atreides as his family assumes control, leading to political intrigue and encounters with the desert-dwelling Fremen. Paul's journey becomes a transformative saga with profound implications for the balance of power in the universe."
+    },
+    {
+        "book": "Meditations",
+        "genre": "Philosophy",
+        "Year": "unknown",
+        "image": "images/meditations.jpg",
+        "desc":"'Meditations' by Marcus Aurelius is a collection of personal reflections by the Roman Emperor, exploring Stoic philosophy. The work imparts timeless wisdom on virtue, resilience, and maintaining inner peace in the midst of life's challenges."
+    },
+    {
+        "book": "The Great Gatsby",
+        "genre": "Novel",
+        "Year": "1925",
+        "image": "images/thegreatgatsby.jpg",
+        "desc":"'The Great Gatsby' by F. Scott Fitzgerald is a classic novel set in the Roaring Twenties, exploring themes of wealth, love, and the American Dream. Narrated by Nick Carraway, the story revolves around Jay Gatsby's pursuit of the elusive Daisy Buchanan, offering a poignant reflection on the illusions of the Jazz Age and the complexities of human desire."
+        
+    },
+    {
+        "book": "Hunger Games",
+        "genre": "Drama",
+        "Year": "2009",
+        "image": "images/hungergames.jpg",
+        "desc":"In Suzanne Collins' 'The Hunger Games,' Katniss Everdeen volunteers for the annual Hunger Games in place of her sister in the dystopian society of Panem. The story revolves around the brutal televised competition where tributes fight for survival. Collins weaves a narrative of sacrifice, survival, and resistance against a controlling government."
+    },
+    {
+        "book": "Maze Runner",
+        "genre": "Fantasy",
+        "Year": "2009",
+        "image": "images/mazerunner.jpg",
+        "desc": "'The Maze Runner' by James Dashner follows Thomas, who wakes up with no memory in a mysterious glade surrounded by a deadly maze. Alongside other boys, he must navigate the labyrinth to escape. The novel explores themes of survival, friendship, and the quest for answers in a gripping dystopian setting."
+    },
+    {
+        "book": "Can't Hurt Me",
+        "genre": "Biography",
+        "Year": "2018",
+        "image": "images/canthurtme.jpg",
+        "desc": "'Can't Hurt Me' by David Goggins is a powerful memoir that details the author's journey from a difficult childhood to becoming a Navy SEAL and ultra-endurance athlete. The book imparts lessons on mental toughness, resilience, and pushing beyond limits to achieve personal growth and success. Goggins' candid narrative serves as an inspiring guide for overcoming challenges and developing an unbreakable mindset."
+    },
+    {
+        "book": "Moby Dick",
+        "genre": "Adventure",
+        "Year": "1851",
+        "image": "images/mobydick.jpg",
+        "desc":"'Moby-Dick' is Herman Melville's iconic tale of Captain Ahab's relentless pursuit of the white whale, Moby Dick. Narrated by Ishmael, the novel delves into themes of obsession, fate, and the complex relationship between humanity and nature on the open sea."
+    }
+    ]
+}

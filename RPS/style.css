@@ -1,0 +1,226 @@
+*{
+    font-family: 'Lumanosimo', cursive;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bimage.jpeg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100svh;
+}
+.text{
+    color: white;
+}
+
+        /* Header sektion */
+.startHeader{
+    background-image: linear-gradient(to right, rgba(255, 233, 133, 0.801) , rgba(138, 93, 10, 0.852));
+    width: 44em;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 50px;
+}
+
+
+        /* Formulär */
+.signForm{
+    width: 44em;
+    height: 33em;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: rgba(255, 233, 133, 0.256);
+    text-align: center;
+    border-radius: 15px;
+}
+
+#submit{
+    border-radius: 15px;
+    font-size: x-large;
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(188, 139, 48);
+    margin-top: 20px;
+}
+#characterText, #usernameText{
+    font-size: x-large;
+}
+
+#username{
+    background-color: rgba(255, 255, 255, 0.568);
+    border: none;
+    border-radius: 5px;
+}
+
+.images{
+    margin-top: 30px;
+}
+/* Karaktärer */
+#Morty{
+    display: none;
+}
+#Morty+label{
+    display: inline-block;
+    background-image: url(images/Morty_MV.webp);
+    background-size: cover;
+    width: 80px;
+    height: 200px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#Morty:hover+label{
+    transform: scale(1.05);
+}
+#Rick{
+    display: none;
+}
+#Rick+label{
+    display: inline-block;
+    background-image: url(images/Rick_MV.webp);
+    background-size: cover;
+    width: 140px;
+    height: 240px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#Rick:hover+label{
+    transform: scale(1.05);
+}
+#EvilMorty{
+    display: none;
+}
+#EvilMorty+label{
+    display: inline-block;
+    background-image: url(images/evil-morty.webp);
+    background-size: cover;
+    width: 160px;
+    height: 220px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#EvilMorty:hover+label{
+    transform: scale(1.05);
+}
+
+button{
+    transition: 0.2s;
+}
+button:hover{
+    transform: scale(1.2);
+}
+
+
+/* Game Css */
+.gameHeader{
+    background-image: linear-gradient(to right, rgba(255, 233, 133, 0.801) , rgba(138, 93, 10, 0.852));
+    width: 40em;
+    height: 40px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 50px;
+}
+.handText{
+    text-align: center;
+}
+.score{
+    font-size: 50px;
+}
+.userScore{
+    position: absolute;
+    top: 65%;
+    left: 38%;
+    font-size: 50px;
+}
+.computerScore{
+    position: absolute;
+    top: 65%;
+    right: 38%;
+    font-size: 50px;
+}
+.gameOn{
+    position: relative;
+    width: 40em;
+    height: 30em;
+    margin: 8% auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: rgba(255, 233, 133, 0.397);
+    border-radius: 15px;
+    z-index: 0;
+}
+
+#squanchy{
+    position: absolute;
+    top: 48%;
+    right: 6%;
+}
+.mortySize{
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+.rickSize{
+    width: 140px;
+    height: 240px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.evilSize{
+    width: 160px;
+    height: 220px;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+}
+.hands{
+    border-radius: 15px;
+    font-size: 75px;
+    border: none;
+    padding: 5px 5px;
+    background: none;
+    
+}
+.hands:hover{
+    border-radius: 15px;
+    font-size: 75px;
+    padding: 5px 5px;
+    border: 1px solid black;
+}
+.chosen{
+    border-radius: 15px;
+    font-size: 75px;
+    padding: 5px 5px;
+    border: 1px solid black;
+}
+
+/* Draw */
+#drawText{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    color: white;
+    animation: draw 1.5s;
+
+}
+@keyframes draw {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: scale(2);
+    }
+    100%{
+        opacity: 0;
+    }
+}

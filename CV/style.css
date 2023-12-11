@@ -1,0 +1,383 @@
+body
+{   
+    background-color: rgba(249, 248, 234);
+    color: rgba(92, 48, 25);
+    height: auto;
+}
+/* Olika containers */
+.row
+{
+    display: flex;
+    justify-content: start;
+    justify-content: space-evenly;
+}
+.col
+{
+    width: 35em;
+}
+.vanster
+{
+    margin: 50px;
+}
+
+.clouds
+{
+
+    max-width: 330px;
+    height: 5em;
+    padding-left: -20px;
+}
+.clouds::after
+{
+    content: "";
+    background-image: url(../cv/images/cloud.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 330px;
+    height: 11em;
+    bottom: 3em;
+    left: -40%;
+    z-index: -1;
+}
+.cloudss::after
+{
+    content: "";
+    background-image: url(../cv/images/cloud.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 300px;
+    height: 5em;
+    left: -40%;
+    z-index: -1;
+}
+
+
+.clouds-special
+{
+    width: 20em;
+    height: 6em;
+    background-image: url(../cv/images/cloud2.png);
+    background-size: cover;
+}
+
+.cont
+{
+    background-color: rgba(92, 48, 25);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.linkedin{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(92, 48, 25);
+    z-index: -10;
+    border-radius: 15px;
+    transition: 0.4s;
+    margin-top: -1px !important;
+}
+#linkedinText{
+    z-index: 10;
+    color: white;
+    margin: 10px;
+}
+#linkedinLogo{
+    z-index: 3;
+    width: 1.7em;
+    height: 1.7em;
+    margin: 10px;
+}
+#linkedinTag {
+    text-decoration: none ;
+}
+.linkedin:hover{
+    transform: scale(1.05);
+}
+/* Färg, storlek och placering till heroimg */
+
+
+.container-hero
+{
+    background-color: rgb(184, 152, 136);
+    border-radius: 0 0 500px 500px;
+    width: 34em;
+    height: 40em;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/IMG_4066.jpeg);
+}
+
+
+
+/* Specifikationer för gränssnitt */
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Salsa';
+    font-weight: lighter;
+    font-size: 80px;
+}
+h2
+{
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    line-height: 1.6;
+}
+
+h5
+{
+    font-weight: bolder;
+    font-size: 1.6em;
+    line-height: 1.6;
+    
+    
+}
+h2,h5, h6, p
+{
+text-align: start;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Salsa';
+
+}
+
+p
+{
+    line-height: 1.6;
+}
+
+
+/* margins */
+
+.weird
+{
+    margin-top: -20px;
+}
+
+.cont-whole p
+{
+    margin-left: 10px;
+}
+
+.texthead
+{
+    margin-bottom: -20px;
+    display: flex;
+    flex-direction: column !important;
+}
+.abouttext
+{
+    margin: 40px 0 40px 0;
+}
+#year
+{
+    margin-bottom: -5px;
+}
+#educhead
+{
+    margin-bottom: -15px;
+}
+.workwhole  
+{
+    margin-top: 20px;
+}
+
+
+/* bredd på texter */
+.education p
+{
+    width: 350px;
+}
+.abouttext
+{
+    width: 480px;
+}
+.workexp
+{
+    width: 400px;
+}
+
+
+/* fixar bredden och färgen på barsen */
+.progress
+{
+    width: 16rem;
+    background-color: rgb(196, 196, 173);
+
+}
+.progress-bar
+{
+    background-color: rgba(92, 48, 25);
+}
+
+  
+  
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+            position: absolute;
+            top: 28em;
+            left: 45%;
+            height: 52em;
+            bottom: 15em;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          
+          /* The actual timeline (the vertical ruler) */
+          .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: rgba(165, 164, 164, 0.562);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+          }
+          
+          /* Container around content */
+          .containers1 {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+          }
+          .containers2 {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+          }
+          .containers3 {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+          }
+          
+          /* The circles on the timeline */
+          .containers1::after {
+            content: '';
+            position: absolute;
+            top: 8em;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: rgb(99, 31, 31);
+            border: 4px solid rgb(99, 31, 31);
+            border-radius: 50%;
+            z-index: 1;
+          }
+          .containers2::after {
+            content: '';
+            position: absolute;
+            top: 22em;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: rgb(99, 31, 31);
+            border: 4px solid rgb(99, 31, 31);
+            border-radius: 50%;
+            z-index: 1;
+          }
+          .containers3::after {
+            content: '';
+            position: absolute;
+            top: 36em;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: rgb(99, 31, 31);
+            border: 4px solid rgb(99, 31, 31);
+            border-radius: 50%;
+            z-index: 1;
+          }
+          
+          /* Place the container to the left */
+          .left {
+            left: -14px;
+          }
+          
+          /* Place the container to the right */
+          .right {
+            left: 50%;
+          }
+          
+          
+          /* Fix the circle for containers on the right side */
+          .right::after {
+            left: -12px;
+          }
+          
+          /* The actual content */
+          .content {
+            padding: 20px 30px;
+            border-radius: 6px;
+          }
+
+          @media screen and (max-width: 1650px)
+          {
+            .container-hero
+            {
+                background-color: rgb(184, 152, 136);
+                border-radius: 0 0 500px 500px;
+                width: 34em;
+                height: 40em;
+                background-size: cover;
+                background-position: center;
+                background-image: url(images/IMG_4066.jpeg);
+            }
+            
+          }
+     
+          @media screen and (max-width: 1400px)
+          {
+            body
+            {
+                font-size: 1.2em;
+                text-align: center;
+            }
+            .timeline, 
+            .containers1::after, 
+            .containers2::after, 
+            .containers3::after
+            {
+                display: none;
+                visibility: hidden;
+            }
+            .mainpic
+            {
+                position: absolute;
+                top: 0;
+                margin-left: 55px;
+            }
+            .vanster
+            {
+                margin-top: 35em;
+            }
+            .container-hero
+            {
+                background-color: rgb(184, 152, 136);
+                border-radius: 0 0 500px 500px;
+                width: 34em;
+                height: 40em;
+                background-size: cover;
+                background-position: center;
+                background-image: url(images/IMG_4066.jpeg);
+                
+            }
+            
+            h1{
+                text-align: start;
+                margin-top: 100px;
+            }
+          }
+     
+
+
