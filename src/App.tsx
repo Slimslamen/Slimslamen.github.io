@@ -7,10 +7,10 @@ import { NavbarComp } from "./NavbarComp"
 function App() {
 
   return (
-    <>
+    <div>
       <NavbarComp />
       <Landing />
-    </>
+    </div>
   )
 }
 

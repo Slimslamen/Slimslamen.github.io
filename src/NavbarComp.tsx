@@ -3,17 +3,18 @@ import { Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flowbite-reac
 
 export function NavbarComp() {
   return (
-      <Navbar fluid rounded className="md:mx-20 font-Poetsen">
+      <Navbar fluid className="bg-secondColor py-5">
       <NavbarBrand href="https://flowbite-react.com">
-        <span className="self-center whitespace-nowrap text-3xl font-semibold dark:text-white text-mainColor">JLM</span>
-        <span className="text-secondColor text-5xl">ok</span>
+        <span className="ml-10 self-center whitespace-nowrap text-3xl font-semibold dark:text-white text-mainColor">JLM</span>
       </NavbarBrand>
       <NavbarToggle />
-      <NavbarCollapse >
-        <a className="text-xl hover:text-red-600 active:text-red-300 ease-in-out duration-200" href="#">Home</a>
-        <a className="text-xl hover:text-red-600 active:text-red-300 ease-in-out duration-200" href="#">About</a>
-        <a className="text-xl hover:text-red-600 active:text-red-300 ease-in-out duration-200" href="#">Projects</a>
-        <a className="text-xl hover:text-red-600 active:text-red-300 ease-in-out duration-200" href="#">Contact</a>
+      <NavbarCollapse>
+        <div className="mx-auto md:mr-10 space-x-10 text-white">
+          <a className="hover:text-mainColor active:text-secondColor ease-in-out duration-200" href="#">Home</a>
+          <a className="hover:text-mainColor active:text-secondColor ease-in-out duration-200" href="#">About</a>
+          <a className="hover:text-mainColor active:text-secondColor ease-in-out duration-200" href="#">Projects</a>
+          <a className="hover:text-mainColor active:text-secondColor ease-in-out duration-200" href="#">Contact</a>
+        </div>
       </NavbarCollapse>
     </Navbar>
   );

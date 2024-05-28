@@ -10,11 +10,12 @@ export default {
         Poetsen: ['"Poetsen One"', "sans-serif"]
       },
       colors: {
-        mainColor:'#DE9D52',
-        secondColor:'#813F19'
+        mainColor:'#83C5BE',
+        secondColor:'#006D77'
       }
     },
   },
   plugins: [flowbite.plugin(),],
 }
 
+/* https://fonts.google.com/selection/embed */
