@@ -23,52 +23,52 @@ export default function About() {
   const toolsArray : ITools[] = [
     {
       language: "Javscript",
-      pic: <RiJavascriptFill className="text-white size-16 mt-8 mb-12"/>
+      pic: <RiJavascriptFill className="text-white size-16 m-6"/>
     },
     {
       language: "Typescript",
-      pic: <BiLogoTypescript className="text-white size-16 mt-8 mb-12"/>
+      pic: <BiLogoTypescript className="text-white size-16 m-6"/>
     },
     {
       language: "React",
-      pic: <FaReact className="text-white size-16 mt-8 mb-12"/>
+      pic: <FaReact className="text-white size-16 m-6"/>
     },
     {
       language: "Angular",
-      pic: <FaAngular className="text-white size-16 mt-8 mb-12"/>
+      pic: <FaAngular className="text-white size-16 m-6"/>
     },
     {
       language: "Firebase",
-      pic: <IoLogoFirebase className="text-white size-16 mt-8 mb-12"/>
+      pic: <IoLogoFirebase className="text-white size-16 m-6"/>
     },
     {
       language: "Figma",
-      pic: <PiFigmaLogoThin className="text-white size-16 mt-8 mb-12"/>
+      pic: <PiFigmaLogoThin className="text-white size-16 m-6"/>
     },
     {
       language: "C#",
-      pic: <SiCsharp className="text-white size-16 mt-4 mb-12"/>
+      pic: <SiCsharp className="text-white size-16 m-6"/>
     },
     {
       language: ".NET",
-      pic: <AiOutlineDotNet className="text-white size-24 mb-5" />
+      pic: <AiOutlineDotNet className="text-white size-16 m-6" />
     },
     {
       language: "Tailwind",
-      pic: <RiTailwindCssFill className="text-white size-16 mb-5"/>
+      pic: <RiTailwindCssFill className="text-white size-16 m-6"/>
     },
     {
       language: "Bootstrap",
-      pic: <FaBootstrap className="text-white size-16 mb-5"/>
+      pic: <FaBootstrap className="text-white size-16 m-6"/>
     },
     {
       language: "Github",
-      pic: <FaGithub className="text-white size-16 mt-6 mb-14"/>
+      pic: <FaGithub className="text-white size-16 m-6"/>
 
     },
     {
       language: "Git",
-      pic: <FaGitAlt className="text-white size-16 mt-6 mb-14"/>
+      pic: <FaGitAlt className="text-white size-16 m-6"/>
     },
   ];
   return (
@@ -87,32 +87,20 @@ export default function About() {
         </p>
         <br />
         <p>
-          Right below this section you'll be able to see different kinds of languagues and frameworks I've learned so
-          far. If you have any questions about me or my projects, feel free to contact me.
-        </p>
-        <br />
-        <p>
           Apart from coding I like to train, in all different kinds of manners. But mostly I train running, swimming and
           I also like to train at the gym. If I got time left over after my coding sessions and training I usually sit
           down for a period and read.
+        </p>
+        <br />
+        <p>
+          Right below this section you'll be able to see different kinds of languagues and frameworks I've learned so
+          far. If you have any questions about me or my projects, feel free to contact me.
         </p>
       </div>
       <div className="grid grid-cols-6 gap-6 py-10">
         {toolsArray.map((tool) => (
           <Card isFooterBlurred radius="lg" className="size-32 border-none flex items-center justify-center bg-thirdColor">
             {tool.pic}
-           {/*  <Image
-              alt="Woman listing to music"
-              className="object-cover"
-              height={200}
-              src="https://nextui.org/images/hero-card.jpeg"
-              width={200}
-            /> */}
-            <CardFooter className="justify-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small z-10">
-              <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
-                {tool.language}
-              </Button>
-            </CardFooter>
           </Card>
         ))}
       </div>
