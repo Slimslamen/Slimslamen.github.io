@@ -1,4 +1,4 @@
-import { Card, CardFooter, Button } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 
 import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -13,72 +13,70 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-
-interface ITools{
-  language :string;
-  pic:JSX.Element
+interface ITools {
+  language: string;
+  pic: JSX.Element;
 }
 
 export default function About() {
-  const toolsArray : ITools[] = [
+  const toolsArray: ITools[] = [
     {
       language: "Javscript",
-      pic: <RiJavascriptFill className="text-white size-16 m-6"/>
+      pic: <RiJavascriptFill className="text-white size-16 m-6" />,
     },
     {
       language: "Typescript",
-      pic: <BiLogoTypescript className="text-white size-16 m-6"/>
+      pic: <BiLogoTypescript className="text-white size-16 m-6" />,
     },
     {
       language: "React",
-      pic: <FaReact className="text-white size-16 m-6"/>
+      pic: <FaReact className="text-white size-16 m-6" />,
     },
     {
       language: "Angular",
-      pic: <FaAngular className="text-white size-16 m-6"/>
+      pic: <FaAngular className="text-white size-16 m-6" />,
     },
     {
       language: "Firebase",
-      pic: <IoLogoFirebase className="text-white size-16 m-6"/>
+      pic: <IoLogoFirebase className="text-white size-16 m-6" />,
     },
     {
       language: "Figma",
-      pic: <PiFigmaLogoThin className="text-white size-16 m-6"/>
+      pic: <PiFigmaLogoThin className="text-white size-16 m-6" />,
     },
     {
       language: "C#",
-      pic: <SiCsharp className="text-white size-16 m-6"/>
+      pic: <SiCsharp className="text-white size-16 m-6" />,
     },
     {
       language: ".NET",
-      pic: <AiOutlineDotNet className="text-white size-16 m-6" />
+      pic: <AiOutlineDotNet className="text-white size-16 m-6" />,
     },
     {
       language: "Tailwind",
-      pic: <RiTailwindCssFill className="text-white size-16 m-6"/>
+      pic: <RiTailwindCssFill className="text-white size-16 m-6" />,
     },
     {
       language: "Bootstrap",
-      pic: <FaBootstrap className="text-white size-16 m-6"/>
+      pic: <FaBootstrap className="text-white size-16 m-6" />,
     },
     {
       language: "Github",
-      pic: <FaGithub className="text-white size-16 m-6"/>
-
+      pic: <FaGithub className="text-white size-16 m-6" />,
     },
     {
       language: "Git",
-      pic: <FaGitAlt className="text-white size-16 m-6"/>
+      pic: <FaGitAlt className="text-white size-16 m-6" />,
     },
   ];
   return (
     <div className="flex items-center flex-col justify-center">
-      <div className="w-1/2 ml-mx my-20">
-        <h1 className="text-2xl mb-10">
-          Get to <span className="text-3xl text-white">know</span> me!
+      <div className="w-1/2 text-2xl md:text-xl my-20">
+        <h1 className="text-4xl md:text-3xl mb-10">
+          Get to <span className="text-4xl md:text-3xl text-white">know</span> me!
         </h1>
         <p>
-          Hi, my name is Jimmy Lopez Morales and I'm from Gislaved, småland. I'm studying to become a frontenddeveloper.
+          Hi, my name is Jimmy Lopez Morales and I'm from Gislaved, Småland. I'm studying to become a frontenddeveloper.
         </p>
         <br />
         <p>
@@ -97,9 +95,14 @@ export default function About() {
           far. If you have any questions about me or my projects, feel free to contact me.
         </p>
       </div>
-      <div className="grid grid-cols-6 gap-6 py-10">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-6 py-10">
         {toolsArray.map((tool) => (
-          <Card isFooterBlurred radius="lg" className="size-32 border-none flex items-center justify-center bg-thirdColor">
+          <Card
+            isFooterBlurred
+            radius="lg"
+            className="cards hover:before:top-[65%] text-white size-32 border-none flex items-center justify-center bg-thirdColor"
+            style={{ content: `${tool.language}` }}
+          >
             {tool.pic}
           </Card>
         ))}
