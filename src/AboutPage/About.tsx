@@ -100,8 +100,7 @@ export default function About() {
           <Card
             isFooterBlurred
             radius="lg"
-            className="cards hover:before:top-[65%] text-white size-32 border-none flex items-center justify-center bg-thirdColor"
-            style={{ content: `${tool.language}` }}
+            className="hover:shadow-2xl hover:h-[110px] text-white size-32 border-none flex items-center justify-center bg-thirdColor"
           >
             {tool.pic}
           </Card>
