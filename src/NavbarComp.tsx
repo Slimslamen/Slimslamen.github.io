@@ -13,7 +13,7 @@ export function NavbarComp() {
     "Contact",
   ];
   return (
-    <Navbar className="bg-thirdColor" shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
+    <Navbar className="bg-thirdColor" position="static" onMenuOpenChange={setIsMenuOpen}>
     <NavbarContent>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
