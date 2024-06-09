@@ -15,7 +15,7 @@ export default function Landing() {
   }
 
   return (
-    <div className="py-40">
+    <div className="py-20">
       <div className="flex md:flex-row flex-col-reverse justify-around w-full items-center">
         <div className="space-y-4">
           <h1 className="text-5xl">Hello!</h1>
@@ -28,7 +28,7 @@ export default function Landing() {
               <FaPerson />
               About me
             </Button>
-            <Button onPress={() => nav("Contact")} className="flex flex-row items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 rounded-lg px-5 md:py-2.5 md:text-sm text-xl">
+            <Button onPress={() => nav("Contact")} value={"Contact"} className="flex flex-row items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 rounded-lg px-5 md:py-2.5 md:text-sm text-xl">
               <FaPhoneAlt />
               Contact
             </Button>

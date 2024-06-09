@@ -70,7 +70,7 @@ export default function About() {
     },
   ];
   return (
-    <div className="flex items-center flex-col justify-center">
+    <div className="flex items-center flex-col justify-center pb-20">
       <div className="w-1/2 text-2xl md:text-xl my-20">
         <h1 className="text-4xl md:text-3xl mb-10">
           Get to <span className="text-4xl md:text-3xl text-white">know</span> me!

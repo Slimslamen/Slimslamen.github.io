@@ -1,7 +1,6 @@
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 
 export default function Project() {
-
   return (
     <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8 mx-auto py-20">
       <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
@@ -18,9 +17,14 @@ export default function Project() {
               <p className="text-tiny text-white">Sparkling Clean, Every Time, Your Satisfaction Guaranteed.</p>
             </div>
           </div>
-          <Button className="bg-pink-200" radius="full" size="sm">
-            See Project
-          </Button>
+          <div className="flex flex-col space-y-3">
+            <Button className="bg-pink-200" radius="full" size="sm">
+              See Project
+            </Button>
+            <Button className="bg-pink-200" radius="full" size="sm">
+              View Page
+            </Button>
+          </div>
         </CardFooter>
       </Card>
       <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
@@ -35,9 +39,14 @@ export default function Project() {
             <p className="text-white text-tiny">Blogish</p>
             <p className="text-white text-tiny">Your Go-To Source for Tips, Trends, and Talk</p>
           </div>
-          <Button className="text-tiny bg-rose-200" radius="full" size="sm">
-            See Project
-          </Button>
+          <div className="flex flex-col space-y-3">
+            <Button className="text-tiny bg-rose-200" radius="full" size="sm">
+              See Project
+            </Button>
+            <Button className="text-tiny bg-rose-200" radius="full" size="sm">
+              View Page
+            </Button>
+          </div>
         </CardFooter>
       </Card>
       <Card className="col-span-12 sm:col-span-5 h-[300px]">
@@ -52,9 +61,14 @@ export default function Project() {
             <p className="text-white text-tiny">RPS</p>
             <p className="text-white text-tiny">Rock, Paper, Scissors! Victory Awaits!</p>
           </div>
-          <Button className="text-tiny bg-yellow-400" radius="full" size="sm">
-            See Project
-          </Button>
+          <div className="flex flex-col space-y-3">
+            <Button className="text-tiny bg-yellow-400" radius="full" size="sm">
+              See Project
+            </Button>
+            <Button className="text-tiny bg-yellow-400" radius="full" size="sm">
+              Visit page
+            </Button>
+          </div>
         </CardFooter>
       </Card>
       <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
@@ -68,12 +82,26 @@ export default function Project() {
           <div className="flex flex-grow gap-2 items-center">
             <div className="flex flex-col">
               <p className="text-tiny text-white">Konify</p>
-              <p className="text-tiny text-white">Unleash Your Unique Style Today.  </p>
+              <p className="text-tiny text-white">Unleash Your Unique Style Today. </p>
             </div>
           </div>
-          <Button href="https://gitlab.com/jimmy.lopezmorales/konify" className="bg-violet-300" radius="full" size="sm">
-            See Project
-          </Button>
+          <div className="flex flex-col space-y-3">
+            <Button
+              href="https://gitlab.com/jimmy.lopezmorales/konify"
+              className="bg-violet-300"
+              radius="full"
+              size="sm"
+            >
+              See Project
+            </Button>
+            <Button
+              className="bg-violet-300"
+              radius="full"
+              size="sm"
+            >
+              View Page
+            </Button>
+          </div>
         </CardFooter>
       </Card>
     </div>
