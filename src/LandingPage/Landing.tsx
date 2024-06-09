@@ -15,7 +15,7 @@ export default function Landing() {
   }
 
   return (
-    <div className="py-20">
+    <div className="py-28">
       <div className="flex md:flex-row flex-col-reverse justify-around w-full items-center">
         <div className="space-y-4">
           <h1 className="text-5xl">Hello!</h1>

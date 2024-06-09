@@ -1,6 +1,10 @@
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 
 export default function Project() {
+
+  const travNav = (url : string) => {
+    window.location.href = url
+  }
   return (
     <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8 mx-auto py-20">
       <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
@@ -18,11 +22,11 @@ export default function Project() {
             </div>
           </div>
           <div className="flex flex-col space-y-3">
-            <Button className="bg-pink-200" radius="full" size="sm">
-              See Project
+            <Button onClick={() => travNav("https://gitlab.com/jimmy.lopezmorales/vividclean")} className="bg-pink-200" radius="full" size="sm">
+              View Repository
             </Button>
             <Button className="bg-pink-200" radius="full" size="sm">
-              View Page
+              View Project
             </Button>
           </div>
         </CardFooter>
@@ -40,11 +44,11 @@ export default function Project() {
             <p className="text-white text-tiny">Your Go-To Source for Tips, Trends, and Talk</p>
           </div>
           <div className="flex flex-col space-y-3">
-            <Button className="text-tiny bg-rose-200" radius="full" size="sm">
-              See Project
+            <Button onClick={() => travNav("https://gitlab.com/jimmy.lopezmorales/blogisch")} className="text-tiny bg-rose-200" radius="full" size="sm">
+              View Repository
             </Button>
             <Button className="text-tiny bg-rose-200" radius="full" size="sm">
-              View Page
+              View Project
             </Button>
           </div>
         </CardFooter>
@@ -62,8 +66,8 @@ export default function Project() {
             <p className="text-white text-tiny">Rock, Paper, Scissors! Victory Awaits!</p>
           </div>
           <div className="flex flex-col space-y-3">
-            <Button className="text-tiny bg-yellow-400" radius="full" size="sm">
-              See Project
+            <Button onClick={() => travNav("https://gitlab.com/jimmy.lopezmorales/rps")} className="text-tiny bg-yellow-400" radius="full" size="sm">
+              View Repository
             </Button>
             <Button className="text-tiny bg-yellow-400" radius="full" size="sm">
               Visit page
@@ -87,19 +91,11 @@ export default function Project() {
           </div>
           <div className="flex flex-col space-y-3">
             <Button
-              href="https://gitlab.com/jimmy.lopezmorales/konify"
-              className="bg-violet-300"
-              radius="full"
-              size="sm"
-            >
-              See Project
+              onClick={() => travNav("https://gitlab.com/jimmy.lopezmorales/konify")} className="bg-violet-300" radius="full" size="sm">
+              View Repository
             </Button>
-            <Button
-              className="bg-violet-300"
-              radius="full"
-              size="sm"
-            >
-              View Page
+            <Button className="bg-violet-300" radius="full" size="sm">
+              View Project
             </Button>
           </div>
         </CardFooter>
