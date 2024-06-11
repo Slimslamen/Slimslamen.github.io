@@ -1,5 +1,5 @@
 import { Card } from "@nextui-org/react";
-
+import { FaFileDownload } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
@@ -91,9 +91,13 @@ export default function About() {
         </p>
         <br />
         <p>
-          Right below this section you'll be able to see different kinds of languagues and frameworks I've learned so
+          Right below this section you'll be able to download my resume aswell as see different kinds of languagues and frameworks I've learned so
           far. If you have any questions about me or my projects, feel free to contact me.
         </p>
+        <a href="src\assets\CV.pdf" download="CV.pdf" className="mt-10 rounded-lg w-72 space-x-5 active:bg-secondColor hover:shadow-2xl text-white py-5 px-12 border-none flex items-center justify-center bg-thirdColor">
+          <p>Dowload Resume</p>
+          <FaFileDownload />
+        </a>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-6 gap-6 py-10">
         {toolsArray.map((tool) => (
