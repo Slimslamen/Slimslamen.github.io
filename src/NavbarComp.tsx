@@ -1,5 +1,5 @@
 /* import { Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flowbite-react"; */
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link as NextLink} from "@nextui-org/react";
 import { useState } from "react";
 
 
@@ -8,12 +8,12 @@ export function NavbarComp() {
 
   const menuItems = [
     "Home",
-    "About me",
+    "About",
     "Projects",
     "Contact",
   ];
   return (
-    <Navbar className="bg-thirdColor" shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
+    <Navbar className="bg-thirdColor" position="static" onMenuOpenChange={setIsMenuOpen}>
     <NavbarContent>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -26,39 +26,39 @@ export function NavbarComp() {
 
     <NavbarContent className="hidden sm:flex gap-4" justify="end">
       <NavbarItem>
-        <Link className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200" color="foreground" href="#">
+        <NextLink href="/" className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200" color="foreground">
           Home
-        </Link>
-      </NavbarItem>
-      <NavbarItem isActive>
-        <Link className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200" href="#" aria-current="page">
-          About me
-        </Link>
+        </NextLink>
       </NavbarItem>
       <NavbarItem>
-        <Link className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200" color="foreground" href="#">
-          Project
-        </Link>
+        <NextLink href="/About" className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200">
+          About
+        </NextLink>
       </NavbarItem>
       <NavbarItem>
-        <Link className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200" color="foreground" href="#">
+        <NextLink href="/Projects" className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200" color="foreground" >
+          Projects
+        </NextLink>
+      </NavbarItem>
+      <NavbarItem>
+        <NextLink href="/Contact" className="text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200" color="foreground" >
           Contact
-        </Link>
+        </NextLink>
       </NavbarItem>
     </NavbarContent>
 
     <NavbarMenu className="bg-thirdColor">
       {menuItems.map((item, index) => (
-        <NavbarMenuItem key={`${item}-${index}`}>
-          <a 
+        <NavbarMenuItem key={index}>
+          <NextLink
             color={
               index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
             }
             className="w-full text text-white text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200"
-            href="#"
+            href={item === 'Home' ? '/' : `/${item}`}
           >
             {item}
-          </a>
+          </NextLink>
         </NavbarMenuItem>
       ))}
     </NavbarMenu>
