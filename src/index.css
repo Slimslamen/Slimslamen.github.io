@@ -9,6 +9,26 @@ body, html, .root{
     background-size: cover;
     min-height: 100vh;
 }
+.fromTop{
+    position: absolute;
+    opacity: 1;
+    top: 1px;
+}
+.inLeft{
+    position: absolute;
+    opacity: 1;
+    left: 200px;
+}
+.inRight{
+    position: absolute;
+    opacity: 1;
+    right: 20px;
+}
+.inRightMain{
+    position: absolute;
+    opacity: 1;
+    right: 20px;
+}
 
 
 
