@@ -28,7 +28,7 @@ export default function Landing() {
   return (
       <section id="Landing" className="my-48">
         <div className="flex md:flex-row flex-col-reverse justify-around w-full items-center">
-          <div id="leftMain" className="space-y-4 absolute top-44 left-0 ease-in duration-1000 opacity-0">
+          <div id="leftMain" className="space-y-4 absolute top-96 md:top-44 left-0 ease-in duration-1000 opacity-0">
             <h1 className="text-5xl">Hello!</h1>
             <h1 className="text-4xl md:text-xl">
               I'm <span className="text-white text-3xl md:text-2xl"> Jimmy Lopez Morales.</span>
@@ -54,7 +54,7 @@ export default function Landing() {
               </Button>
             </div>
           </div>
-          <div id="rightMain" className="absolute top-44 right-[-50px] ease-in duration-1000 mr-64 opacity-0">
+          <div id="rightMain" className="absolute top-28 md:top-44 right-[-50px] ease-in duration-1000 mr-64 opacity-0">
             <Image isBlurred width={220} src="src/assets/portpic.png" alt="My face as a bitmoji" />
           </div>
         </div>

@@ -17,7 +17,7 @@ export const WholePage = () => {
         const options = {
             root: null,
             rootMargin: "0px",
-            threshold: 0.5,
+            threshold: 0.2,
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -62,7 +62,7 @@ export const WholePage = () => {
     }, []);
 
     return (
-        <div className="space-y-64 py-48">
+        <div className="space-y-64 py-48 relative">
             <div ref={landingRef} className="appear">
                 <Landing />
             </div>

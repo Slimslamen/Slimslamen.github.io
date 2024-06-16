@@ -94,7 +94,7 @@ export default function About() {
           Right below this section you'll be able to download my resume aswell as see different kinds of languagues and frameworks I've learned so
           far. If you have any questions about me or my projects, feel free to contact me.
         </p>
-        <a href="src\assets\CV.pdf" download="CV.pdf" className="mt-10 rounded-lg w-72 space-x-5 active:bg-secondColor hover:shadow-2xl text-white py-5 px-12 border-none flex items-center justify-center bg-thirdColor">
+        <a href="src\assets\CV.pdf" download="CV.pdf" className="mx-auto mt-10 rounded-lg md:w-72 space-x-5 active:bg-secondColor hover:shadow-2xl text-white py-5 px-12 border-none flex items-center justify-center bg-thirdColor">
           <p>Dowload Resume</p>
           <FaFileDownload />
         </a>

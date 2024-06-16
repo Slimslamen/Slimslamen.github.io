@@ -17,7 +17,7 @@ body, html, .root{
 .inLeft{
     position: absolute;
     opacity: 1;
-    left: 200px;
+    left: 20%;
 }
 .inRight{
     position: absolute;
@@ -26,11 +26,30 @@ body, html, .root{
 }
 .inRightMain{
     opacity: 1;
-    right: 20px;
+    right: 5%;
 }
 .appear{
     animation-name: appearAnime;
     animation-duration: 2s;
+}
+.appear::after:nth-child(0){
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 10%;
+    bottom: 85%;
+    background-color: #006D77;
+    width: 4px;
+    animation-name: appearLine;
+    animation-duration: 1s;
+}
+.appear::before{
+    content: "";
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    background-color: #006D77;
+    width: 4px;
 }
 .hide{
     opacity: 0;
@@ -54,6 +73,14 @@ body, html, .root{
     }
     
 }
+@keyframes appearLine {
+    from{
+        bottom: 110%;
+    }
+    to{
+        bottom: 85%;
+    }
+}
 @keyframes hideAnime {
     from{
         opacity: 1;
@@ -75,3 +102,8 @@ body, html, .root{
 }
 
 
+@media only screen and (max-width: 600px) {
+    .inRightMain{
+        right: -35%;
+    }
+  }
