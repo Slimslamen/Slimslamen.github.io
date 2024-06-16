@@ -25,10 +25,53 @@ body, html, .root{
     right: 20px;
 }
 .inRightMain{
-    position: absolute;
     opacity: 1;
     right: 20px;
 }
+.appear{
+    animation-name: appearAnime;
+    animation-duration: 2s;
+}
+.hide{
+    opacity: 0;
+    animation-name: hideAnime;
+    animation-duration: 1.5s;
+}
+.scroll{
+    animation-name: Scrollbtn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes appearAnime {
+    from{
+        opacity: 0;
+        right: 0;
+    }
+    to{
+        opacity: 1;
+        right: 50%;
+    }
+    
+}
+@keyframes hideAnime {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes Scrollbtn {
+    0%{
+        bottom: 35px;
+    }
+    50%{
+        bottom: 40px;
+    }
+    100%{
+        bottom: 35px;
+    }
+}
 
 

@@ -1,14 +1,15 @@
 import About from "./AboutPage/About";
-import Landing from "./LandingPage/Landing";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { NavbarComp } from "./NavbarComp";
 import Contact from "./ContactPage/Contact";
 import Project from "./ProjectPage/Project";
+import { WholePage } from "./WholePage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Landing />,
+    element: <WholePage />,
   },
   {
     path: "/About",

@@ -26,7 +26,7 @@ export function NavbarComp() {
     "Contact",
   ];
   return (
-    <Navbar  className="bg-mainColor" position="static" onMenuOpenChange={setIsMenuOpen}>
+    <Navbar className="bg-mainColor" position="static" onMenuOpenChange={setIsMenuOpen}>
     <NavbarContent id="leftNav" className="absolute top-[-20px] ease-in duration-1000 opacity-0">
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
