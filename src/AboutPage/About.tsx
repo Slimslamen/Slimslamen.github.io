@@ -70,24 +70,24 @@ export default function About() {
     },
   ];
   return (
-    <div className="flex items-center flex-col justify-center pb-20">
+    <div className="flex items-center flex-col justify-center pb-20 md:mt-64 mt-[40em]">
       <div className="w-1/2 text-2xl md:text-xl my-20">
         <h1 className="text-4xl md:text-3xl mb-10">
           Get to <span className="text-4xl md:text-3xl text-white">know</span> me!
         </h1>
         <p>
-          Hi, my name is Jimmy Lopez Morales and I'm from Gislaved, Småland. I'm studying to become a frontenddeveloper.
+           I'm from Gislaved, Småland. I'm studying to become a frontenddeveloper.
         </p>
         <br />
         <p>
           I like to try new tools when creating projects. Whether it is just trying out a new hook, or trying out a new
-          service for a database and hosting, try to make the UI be as modern as possible.
+          service for a database and hosting, or trying different tools to make the UI be as modern as possible.
         </p>
         <br />
         <p>
-          Apart from coding I like to train, in all different kinds of manners. But mostly I train running, swimming and
-          I also like to train at the gym. If I got time left over after my coding sessions and training I usually sit
-          down for a period and read.
+          Apart from coding I like to train, in all different kinds of manners. But I mostly like running, swimming and
+          the gym aswell. If I got time left over after my coding sessions and training I usually sit
+          down for a period and read or spend time with friends and family.
         </p>
         <br />
         <p>
