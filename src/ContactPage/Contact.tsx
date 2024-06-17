@@ -1,6 +1,5 @@
 import { Button } from "@nextui-org/react";
 import { TextInput, Textarea, FloatingLabel } from "flowbite-react";
-import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 export default function Contact() {
@@ -8,7 +7,15 @@ export default function Contact() {
 
   }
   return (
-    <form onSubmit={subbe} className="flex items-center justify-center flex-col mx-auto w-4/5 md:w-[25em] rounded-lg pt-16 pb-10 px-4 my-36 space-y-5 bg-thirdColor">
+    <div className="mx-auto my-36">
+      <div className="mx-auto w-80 md:w-[35rem] mb-20">
+        <h2 className="text-4xl md:text-5xl mb-5">Feel free to contact me</h2>
+        <p className="text-xl">
+          If you have any questions about my projects, how my current education is going or also question about me.
+          Feel free to contact me and I'll be happy to answer all your questions.
+        </p>
+      </div>
+    <form onSubmit={subbe} className="flex items-center justify-center flex-col mx-auto w-4/5 md:w-[25em] rounded-lg pt-16 pb-10 px-4  space-y-5 bg-thirdColor">
       <h2 className="text-4xl text-white">Contact</h2>
       <FloatingLabel variant="outlined" label="Label" className="bg-white max-w-md" />
       <div className="max-w-md">
@@ -25,5 +32,6 @@ export default function Contact() {
         Send
       </Button>
     </form>
+    </div>
   );
 }
