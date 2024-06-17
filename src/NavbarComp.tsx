@@ -33,7 +33,7 @@ export function NavbarComp() {
         className="sm:hidden"
       />
       <NavbarBrand>
-        <p className="text-3xl font-bold text-inherit">JLM</p>
+        <p className="text-3xl font-bold text-inherit ">JLM</p>
       </NavbarBrand>
     </NavbarContent>
 

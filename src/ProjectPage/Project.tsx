@@ -5,8 +5,8 @@ export default function Project() {
     window.location.href = url;
   };
   return (
-    <div className="max-w-[900px] mx-auto py-20">
-      <div className="mx-auto w-80 md:w-[35rem]">
+    <div className="bg-thirdColor mx-0 md:mx-20 md:max-w-2/3 flex items-center justify-center flex-col py-20 rounded-md">
+      <div className="mx-auto w-full px-12 md:w-[35rem]">
         <h2 className="text-4xl md:text-5xl mb-10">My <span className="text-white">Projects</span></h2>
         <p className="text-xl">
           Bellow I've linked 4 different projects. The projects involve everything from simple vanilla javascript, to

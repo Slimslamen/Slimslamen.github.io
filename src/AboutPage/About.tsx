@@ -70,10 +70,10 @@ export default function About() {
     },
   ];
   return (
-    <div className="flex items-center flex-col justify-center pb-20 md:mt-64 mt-[40em]">
+    <div className="bg-thirdColor mx-0 md:mx-20 flex items-center flex-col justify-center pb-20 md:mt-0 mt-[40em] rounded-md">
       <div className="w-1/2 text-2xl md:text-xl my-20">
         <h1 className="text-4xl md:text-3xl mb-10">
-          Get to <span className="text-4xl md:text-3xl text-white">know</span> me!
+          Get to <span className="text-4xl md:text-3xl text-black">know</span> me!
         </h1>
         <p>
            I'm from Gislaved, Småland. I'm studying to become a frontenddeveloper.

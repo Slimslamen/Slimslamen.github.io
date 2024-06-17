@@ -26,12 +26,12 @@ export default function Landing() {
   }, []);
 
   return (
-      <section id="Landing" className="my-48">
-        <div className="flex md:flex-row flex-col-reverse justify-around w-full items-center">
+      <div id="Landing" className="Landing my-48 bg-hero-pattern">
+        <div className="flex md:flex-row flex-col-reverse justify-around w-full items-center bg-hero-pattern">
           <div id="leftMain" className="space-y-4 absolute top-96 md:top-44 left-56 ease-in duration-1000 opacity-0">
             <h1 className="text-5xl">Hello!</h1>
             <h1 className="text-4xl md:text-xl">
-              I'm <span className="text-white text-3xl md:text-2xl"> Jimmy Lopez Morales.</span>
+              I'm <span className="text-thirdColor text-3xl md:text-2xl"> Jimmy Lopez Morales.</span>
               <br /> Welcome to my portfolio.
             </h1>
             <h2 className="text-secondColor md:text-large text-2xl">Web developer</h2>
@@ -58,6 +58,6 @@ export default function Landing() {
             <Image isBlurred width={220} src="src/assets/portpic.png" alt="My face as a bitmoji" />
           </div>
         </div>
-      </section>
+      </div>
   );
 }

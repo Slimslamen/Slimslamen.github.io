@@ -7,7 +7,7 @@ export default function Contact() {
 
   }
   return (
-    <div className="mx-auto my-36">
+    <div className="mx-auto mt-8">
       <div className="mx-auto w-80 md:w-[35rem] mb-20">
         <h2 className="text-4xl md:text-5xl mb-5">Feel free to contact me</h2>
         <p className="text-xl">

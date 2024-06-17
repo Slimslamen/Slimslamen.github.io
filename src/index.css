@@ -8,6 +8,7 @@ body, html, .root{
     font-family: "EB Garamond", serif;
     background-size: cover;
     min-height: 100vh;
+    color: white;
 }
 .fromTop{
     position: absolute;
@@ -31,11 +32,14 @@ body, html, .root{
     animation-name: appearAnime;
     animation-duration: 2s;
 }
+.Landing{
+    background-image: url("src/assets/portpic.jpg");
+}
 
 .hide{
     opacity: 0;
     animation-name: hideAnime;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 .scroll{
     animation-name: Scrollbtn;

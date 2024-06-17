@@ -9,6 +9,9 @@ export default {
 ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('src/assets/portpic2.jpg')",
+      },
       fontFamily: {
         Poetsen: ['"Poetsen One"', "sans-serif"]
       },
