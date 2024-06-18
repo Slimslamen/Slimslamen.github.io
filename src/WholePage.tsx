@@ -62,7 +62,7 @@ export const WholePage = () => {
     }, []);
 
     return (
-        <div className="space-y-96 py-48 relative mx-auto">
+        <div className="space-y-[35em] py-48 relative mx-auto">
             <div ref={landingRef} className="appear">
                 <Landing />
             </div>

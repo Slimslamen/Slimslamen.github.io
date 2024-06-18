@@ -60,14 +60,11 @@ export function NavbarComp() {
       </NavbarItem>
     </NavbarContent>
 
-    <NavbarMenu className="bg-thirdColor">
+    <NavbarMenu className="bg-transparent">
       {menuItems.map((item, index) => (
         <NavbarMenuItem key={index}>
           <NextLink
-            color={
-              index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-            }
-            className="w-full text text-sm hover:text-mainColor active:text-secondColor ease-in-out duration-200"
+            className="text-white w-full text-xl hover:text-mainColor active:text-secondColor ease-in-out duration-200"
             href={item === 'Home' ? '/' : `/${item}`}
           >
             {item}
