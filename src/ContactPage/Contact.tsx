@@ -15,7 +15,7 @@ export default function Contact() {
           Feel free to contact me and I'll be happy to answer all your questions.
         </p>
       </div>
-    <form onSubmit={subbe} className="flex items-center justify-center flex-col mx-auto w-4/5 md:w-[25em] rounded-lg pt-16 pb-10 px-4  space-y-5 bg-thirdColor">
+    <form onSubmit={subbe} className="flex items-center justify-center flex-col mx-auto w-4/5 md:w-full rounded-lg pt-16 pb-10 px-4  space-y-5 bg-thirdColor">
       <h2 className="text-4xl text-white">Contact</h2>
       <FloatingLabel variant="outlined" label="Label" className="bg-white max-w-md" />
       <div className="max-w-md">
@@ -27,7 +27,7 @@ export default function Contact() {
       <Button
         type="submit"
         value={"Contact"}
-        className="text-3xl flex flex-row items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 rounded-lg px-5 md:py-2.5 md:text-xl"
+        className="text-3xl flex flex-row items-center text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br shadow-lg rounded-lg px-10 md:py-2.5 md:text-xl"
       >
         Send
       </Button>
